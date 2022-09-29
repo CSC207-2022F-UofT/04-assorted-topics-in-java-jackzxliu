@@ -40,7 +40,6 @@ class DrivableMap {
 
 
 
-
     /* TODO: Write a method named hasFasterThan that takes an int (a speed)
      *       and returns true iff there is at least one item in drivable_map
      *       that has a maxSpeed >= the speed given.
@@ -65,8 +64,8 @@ class DrivableMap {
      *       drivable_map.
      */
     public List<Tradable> getTradable(){
-        List<Tradable> list = new ArrayList(drivable_map.values());
-        return list;
+        List<Tradable> lst = new ArrayList<Tradable>((Collection<? extends Tradable>) drivable_map.values());
+        return lst;
     }
 
 
